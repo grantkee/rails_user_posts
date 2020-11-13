@@ -13,7 +13,8 @@ class PostsController < ApplicationController
 
   private
   def post_params
+    # take parameters from model named post and permit column named comment
     params(:post).permit(:comment)
   end
-  
+
 end
